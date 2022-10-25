@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+baby {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ============================================   header */
+.header_cadastrar {
+  display: flex;
+  background-color: #222;
+  height: 50%;
+  grid-area: header;
+  grid-column: 1 / 4;
+}
+
+.menu_cadastrar {
+  display: flex;
+  border: 1px solid #222;
+  grid-area: col_2;
+  grid-column: 1/4;
+  grid-row: 2;
+  background-color: #efefef;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* ========================================== aside */
+
+.screen_cadastrar {
+  display: flex;
+  background: #4c4f5e;
+  grid-area: aside;
+  grid-column: 1 / 4;
+  border: none;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+.cashier_cadastrar {
+  display: grid;
+  margin-left: 64px;
+  grid-area: aside;
+  grid-column: 2;
+  background: #d9d9d9;
+  width: 500px;
+  height: 450px;
+  grid-template-areas:
+    "bloco1 bloco1 bloco1"
+    "bloco2 bloco2 bloco2"
+    "bloco3 bloco3 bloco3";
+  border-radius: 4px;
+  justify-content: center;
+  justify-items: center;
+}
+.acessar_conta_cadastrar {
+  display: flex;
+  grid-area: bloco1;
+  grid-column: 1 / 4;
+  background: #000;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 30px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+  font-size: 2rem;
+  width: 92%;
+}
+
+.l_usuario_cadastrar {
+  display: flex;
+  margin-top: -8px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  font-size: 16px;
+  margin-right: 383px;
+}
+.usuario_cadastrar {
+  display: flex;
+  padding: 9px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  width: 380px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  outline: 0;
+  height: 20px;
+  margin-top: 14px;
+  justify-self: center;
+  padding-left: 30px;
+}
+.MdEmail-log {
+  margin-top: 33px;
+  margin-left: -50px;
+  z-index: 0;
+  background: #000;
+}
+.l_senha_cadastrar {
+  display: flex;
+  margin-top: 64px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  font-size: 16px;
+  margin-right: 390px;
+}
+
+.senha_cadastrar {
+  display: flex;
+  padding: 9px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  width: 380px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  outline: 0;
+  height: 20px;
+  margin-top: 72px;
+  justify-self: center;
+  padding-left: 30px;
+  margin-top: 85px;
+}
+.senha_cadastrar {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.l_confirmar_cadastrar {
+  display: flex;
+  margin-top: 135px;
+  grid-column: 1/4;
+  grid-row: 2;
+  font-size: 16px;
+  margin-right: 300px;
+}
+.confirmar_cadastrar {
+  display: flex;
+  padding: 9px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  width: 380px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  outline: 0;
+  height: 20px;
+  margin-top: 72px;
+  justify-self: center;
+  padding-left: 30px;
+  margin-top: 160px;
+}
+
+.retorno {
+  color: red;
+  display: flex;
+  justify-items: center;
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 0auto;
+  grid-column: 1/4;
+  margin-top: -95px;
+}
+.button_cadastrar {
+    display: block;
+  display: flex;
+  width: 220px;
+  height: 40px;
+  background: #000;
+  grid-column: 1/4;
+  text-transform: uppercase;
+  border-bottom: 5px 0 0 0 solid #ccc;
+  border-radius: 5px;
+  color: #ccc;
+  margin-top: 35px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+/* =========================================  footer */
+.footer_cadastrar {
+  display: block;
+  display: flex;
+  background-color: #222;
+  height: 90px;
+  margin: 0;
+  grid-area: "footer";
+  grid-column: 1 / 4;
+  color: rgb(168, 168, 168);
+  justify-content: center;
+  align-items: center;
+  margin-top: -65px;
+}
+.resCadastrar {
+  display: flex ;
+  display: none;
+  color:#000;
+  background-color: darkgoldenrod;
+  width: 425px;
+  height: 25px;
+  grid-column: 1/4;
+  margin-top: 340px;
+  position: absolute;
+  text-align: center;
+}

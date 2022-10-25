@@ -1,0 +1,153 @@
+*  {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.containner_login {
+  display: grid;
+  grid-template-columns: 35% 1fr 35%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "aside aside aside"
+    "footer footer footer";
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_inicio {
+  display: flex;
+  grid-area: aside;
+  grid-column: 2/3;
+  grid-row: 2;
+  gap: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.header_inicio {
+  grid-area: "header";
+  background: #222;
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: 88px;
+}
+.vlzm_inicio {
+  grid-area: header;
+  grid-row: 1;
+  grid-column: 1 / 4;
+  color: #ccc;
+  padding: 25px;
+  font-size: 2rem;
+  text-indent: 50px;
+}
+.h2_inicio {
+  display: flex;
+  font-size: 1rem;
+  letter-spacing: 0.08em;  
+  margin-top: -20px; 
+  color: rgb(168, 168, 168);
+  margin-right: 110px;
+
+}
+
+/*=======================================card_extrato*/
+.card_extrato {
+  background: #ccc;
+  width: 230px;
+  height: 350px;
+  border-radius: 4px;
+  border-style: outset;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 120px;
+}
+.card_extrato:hover {
+  background: rgb(187, 185, 185);
+  transform: translate(0px, -2px);
+  border: 1px solid #222;
+}
+.ico_extrato {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.p_extrato {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: #000;
+}
+.p_periodo {
+  text-align: center;
+  color: blue;
+  margin-top: 60px;
+  text-decoration: underline;
+  letter-spacing: 0.05em;
+}
+/*================================card_saldo*/
+
+.card_saldo {
+  background: #ccc;
+  width: 230px;
+  height: 350px;
+  border-radius: 4px;
+  border-style: outset;
+  align-self: flex-start;
+  margin-top: 120px;
+}
+.card_saldo:hover {
+  background: rgb(187, 185, 185);
+  transform: translate(0px, -2px);
+  border: 1px solid #222;
+}
+.ico_saldo {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.p_saldo {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: #000;
+}
+.p_disponivel {
+  text-align: center;
+  margin-top: 60px;
+  color: blue;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+}
+.p_bloqueado {
+  text-align: center;
+  margin-top: 10px;
+  color: blue;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+}
+.footer_inicio {
+  background: #222;
+  grid-area: "footer";
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column: 1 / 4;
+  padding: 15px;
+  margin-top: 78px;
+  text-align: center;
+  align-self: center;
+  color: rgb(168, 168, 168);
+  grid-gap: 20px;
+}

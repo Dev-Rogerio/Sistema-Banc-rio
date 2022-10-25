@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.containner_disponivel {
+  display: flex;
+  background: rgb(134, 136, 134);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "aside aside aside"
+    "footer footer footer";
+  height: 998px;
+}
+
+.tela_disponivel {
+  width: 1200px;
+  height: 370px;
+  background-color: #d9d9d9;
+  grid-column: 2/3;
+  grid-row: 2;
+  justify-self: center;
+  margin-top: 150px;
+}
+
+.main_disonivel {
+  background-color: #d9d9d9;
+  justify-self: center;
+}
+
+.main_disonivel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "col_1 col_1 col_1"
+    "col_2 col_2 col_2"
+    "col_3 col_3 col_3"
+    "col_4 col_4 col_4"
+    "col_5 col_5 col_5"
+    ;
+    width: 100%;
+    grid-gap: 5px;    
+}
+
+.h1_saldo {
+  display: flex;
+  font-size: 27px;
+  grid-area: col_1;
+  grid-column: 1/4;
+  grid-row: 1; 
+  justify-content: center;
+  background-color: #222;
+  align-items: center;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu_disponivel {
+  display: flex;
+  border: 1px solid #222;
+  grid-area: col_2;
+  grid-column: 1/4;
+  grid-row: 2;  
+  background-color:  rgb(113, 112, 112); 
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.saldo_disponivel {
+  display: flex;
+  border: 1px solid #222;
+   grid-area: col_3;
+  grid-column: 1/4; 
+  grid-row: 3;  
+  background-color:  rgb(113, 112, 112); 
+  align-items: center;
+  border-radius: 5px;
+}
+.total {
+  margin-left: 250px;
+}
+.saldo_disp {
+  display: flex;
+  margin-right: 100px;
+  justify-content: space-between;
+  margin-left: 380px;
+  cursor: pointer;
+}
+.descricao {
+  display: flex;
+  border: 1px solid #222;
+  grid-area: col_4;
+  grid-column: 1/4; 
+  grid-row: 4;
+  background-color:  #efefef;
+  border-radius: 5px;
+  
+}
+
+.footer_disponivel {
+  display: flex;
+  background-color: #222;
+  height: 90px;
+  margin: 0;
+  grid-area: "footer";
+  grid-column: 1 / 4;
+  color: rgb(168, 168, 168);
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+li {
+  cursor: pointer;
+}

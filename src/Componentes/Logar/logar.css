@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+boby {
+  width: 100%;
+  height: 170%;
+  
+}
+
+.containner_login {
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "aside aside aside"
+    "footer footer footer";
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.header_login {
+  display: flex;
+  background-color: #222;
+  height: 98px;
+  grid-area: header;
+  grid-column: 1 / 4;
+}
+
+.vlzm {
+  grid-area: header;
+  grid-row: 1;
+  grid-column: 1 / 4;
+  color: #ccc;
+  padding: 25px;
+  font-size: 2rem;
+  text-indent: 50px;
+}
+
+.screen_principal {
+  display: flex;
+  background: #4c4f5e;
+  grid-area: aside;
+  grid-column: 1 / 4;
+  border: none;
+  height: 797.6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cashier {
+  display: flex;
+  display: grid;
+  margin-left: 64px;
+  grid-area: aside;
+  grid-column: 2;
+  background: #d9d9d9;
+  width: 467px;
+  height: 450px;
+  grid-template-areas:
+    "bloco1 bloco1 bloco1"
+    "bloco2 bloco2 bloco2"
+    "bloco3 bloco3 bloco3";
+  border-radius: 4px;
+  justify-content: center;
+  grid-column: 1/4;
+  box-shadow: 3px 3px 1px 0 #00000060;
+}
+
+.acessar_conta {
+  display: flex;
+  grid-area: bloco1;
+  grid-column: 1 / 4;
+  background: #000;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 30px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+  font-size: 2rem;
+  width: 96.9%;
+  margin-left: -23.7px;
+}
+
+.use_login {
+  display: flex;
+  grid-area: bloco2;
+  grid-column: 1/4;
+  width: 70px;
+  height: 70px;
+  margin-top: -10px;
+  justify-self: center;
+}
+
+.l_usuario {
+  display: flex;
+  margin-top: -8px;
+  margin-left: 3px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  font-size: 18px;
+}
+.usuario {
+  display: flex;
+  padding: 9px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  width: 380px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  outline: 0;
+  height: 20px;
+  margin-top: 14px;
+  justify-self: center;
+  padding-left: 40px;
+  border: 0px;
+  border-bottom: 3px solid #00000070;
+}
+
+.MdEmail-log {
+  margin-top: 33px;
+  margin-left: -50px;
+  z-index: 0;
+  background: #000;
+}
+.l_senha {
+  display: flex;
+  margin-top: 64px;
+  margin-left: 3px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  font-size: 18px;
+  
+}
+
+.senha {
+  display: flex;
+  padding: 9px;
+  grid-area: bloco3;
+  grid-column: 1/4;
+  grid-row: 2;
+  width: 380px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  outline: 0;
+  height: 20px;
+  margin-top: 72px;
+  justify-self: center;
+  padding-left: 40px;
+  margin-top: 85px;
+  border: 0px;
+  border-bottom: 3px solid #00000070 ;
+}
+.senha input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.MdLock-log {
+  margin-top: 33px;
+  margin-left: -51px;
+  z-index: 0;
+  background: #000;
+}
+.entrar {
+  display: flex;
+  grid-area: bloco3;
+  grid-column: 2/3;
+  margin: 0 auto;
+  justify-content: center;
+  justify-items: start;
+}
+.button_entrar {
+  width: 220px;
+  height: 40px;
+  background: #000;
+  grid-column: 2/3;
+  text-transform: uppercase;
+  border-bottom: 5px 0 0 0 solid #ccc;
+  border-radius: 5px;
+  color: #ccc;
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button_entrar:hover {
+  background-color: #222;
+  color: #ffffff60;
+  transition: all .4s ease-out;
+ 
+}
+
+.reg {
+  display: flex;
+  margin: 0;
+  grid-column: 1/4;
+  grid-row: 3;
+  grid-area: bloco3;
+  justify-content: center;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.registre-se {
+  display: flex;
+  margin-top: 80px;
+  grid-column: 1/4;
+  grid-row: 3;
+  grid-area: bloco3;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  padding: 5px;
+  gap: 10px;
+}
+.button:hover {
+  background: rgba(87, 86, 86, 0.678);
+  transform: translate(0px, -2px);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer_login {
+  display: flex;
+  background-color: #222;
+  height: 90px; 
+  grid-area: "footer";
+  grid-column: 1 / 4;
+  color: rgb(168, 168, 168);
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.senha_login {
+  border-radius: 4px;
+  border: 1px solid rgb(147, 145, 145);
+  outline: 0;
+}
+h1 {
+  color: rgb(102, 99, 99);
+  font-size: 1rem;
+  letter-spacing: 0.07em;
+  margin-left: 30px;
+}
+
+
+
+.login-eye {
+  display: block;
+  display: flex;
+  justify-items: end;
+}
+.resLogar {
+  display: flex;
+  justify-content: center;
+  grid-area: bloco3;
+  align-items: start;
+  margin-top: -15px;
+  color: #000;
+  display: none;
+  grid-column: 1/4;
+  margin-left: 10px;
+  height: 25px;
+  text-align: center;
+  animation: piscaPisca 1.5s infinite;
+  background-color: darkgoldenrod;
+
+}
+
+@keyframes piscaPisca {
+  
+  20% {color: #000; }
+  0% {color: #000}
+}
+

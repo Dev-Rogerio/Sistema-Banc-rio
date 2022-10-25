@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto Slab",
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+
+/* =================================   header */
+/* .header_registrar { 
+  display: flex;
+  background-color: #222;
+  height: 110px;
+  grid-area: header;
+  grid-column: 1 / 4;
+}*/
+
+/* =================================    aside */
+
+/* .screen_registrar { 
+  display: flex;
+  background: #4c4f5e;
+  grid-area: aside;
+  grid-column: 1 / 4;
+  border: none;
+  height: 797.6px;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
+
+h2 {
+  color: #ccc;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  width: 100%;
+  background-color: #121214;
+  color: white;
+}
+
+.login-logo img {
+}
+
+.login-right h2 {
+  font-family: Roboto Slab;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.login-right h4 {
+  font-family: Roboto Slab;
+  font-weight: 300;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e1e1e6;
+}
+
+.Login-LoginInputEmail {
+  display: flex;
+  align-items: center;
+  color: gray;
+  background-color: #1a1a1d;
+  width: 98%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.Login-LoginInputEmail svg {
+  margin-left: 20px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.Login-LoginInputEmail input {
+  background: transparent;
+  width: 100%;
+  outline-width: 0;
+  color: #e1e1e6;
+  border: none;
+  font-size: 17px;
+  margin-left: 12npx;
+  margin-right: 10px;
+}
+
+.Login-LoginInputPassword {
+  display: flex;
+  align-items: center;
+  color: gray;
+  background-color: #1a1a1d;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 5px;
+  width: 98%;
+  height: 50px;
+}
+
+.Login-LoginInputPassword svg {
+  margin-left: 20px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.Login-LoginInputPassword input {
+  background: transparent;
+  width: 100%;
+  outline-width: 0;
+  color: #e1e1e6;
+  border: none;
+  font-size: 17px;
+  margin-left: 12px;
+  margin-right: 10px;
+  
+}
+.login-right button {
+  width: 98%;
+  background-color: #202024;
+  color: #eff2f5;
+  font-weight: 800px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 50px;
+  border: none;
+  outline-width: 0;
+ 
+}
+.login-right button:hover {
+  background-color: #121214;
+  color: #eff2f5;
+  cursor: pointer;
+  
+}
+.login-right {
+  background-color: #29292e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+.Login-LoginInputPassword input {
+  background: transparent;
+  width: 100%;
+  outline-width: 0;
+  color: #e1e1e6;
+  border: none;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login-right button {
+  background-color: #000;
+  font-weight: 800px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #ccc;
+  width: 198px;
+  border: none;
+  /* border: 1px solid #ccc; */
+  outline-width: 0;
+}
+hr {
+  width: 380px;
+  margin-top: 50px;
+  border: 1px solid #00000080;
+}
+/* =================================    footer */
+
+.footer_login {
+  display: flex;
+  background-color: #222;
+  height: 90px;
+  margin: 0;
+  grid-area: "footer";
+  grid-column: 1 / 4;
+  color: rgb(168, 168, 168);
+  justify-content: center;
+  align-items: center;
+  margin-top: -79px;
+}
+
+.senha_login {
+  border-radius: 4px;
+  border: 1px solid rgb(147, 145, 145);
+  outline: 0;
+}
+.res {
+  display: block;
+  display: flex;
+  width: 400px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
