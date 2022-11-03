@@ -213,7 +213,7 @@ function Consulta() {
       </aside>
 
       <footer className="footer_login">
-        @VLZM todos os direitos reservados
+        @VLZM todos os direitos reservados.
       </footer>
     </containner>
   );
