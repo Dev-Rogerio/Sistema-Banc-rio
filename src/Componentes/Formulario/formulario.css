@@ -1,11 +1,232 @@
 * {
     padding: 0;
     margin: 0;
-    
-  
 }
 
-body{
-    width: 100vw;
-    height: 10vh;
+.fundo_form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #222;
+    height: 150px;
+    justify-content: center;
+
+    background-color: #74716f;
+}
+
+.container_form {
+    display: flex;
+    width: 83%;
+    height: 70%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 10px;
+    background-color: #ccc;
+    padding: 15px;
+}
+
+.inside {
+    display: block;
+}
+
+.label_form {
+    display: flex;
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    margin: 3px;
+}
+
+.input_form {
+    padding: 10px;
+    border-radius: 2px;
+    height: 10px;
+    display: flex;
+    outline: 0;
+    color: #000;
+    font-size: 15px;
+}
+
+.id_form {
+    display: flex;
+    background-color: #d3d3cd;
+    border: 1px solid #000;
+    width: 60px;
+}
+
+.agencia-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.conta-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.date-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.descricao-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 350px;
+    cursor: pointer;
+}
+
+.valor-form {
+
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 200px;
+    cursor: pointer;
+}
+
+.button_form {
+    display: flex;
+    position: absolute;
+    margin-top: 70px;
+    border-radius: 4px;
+    background-color: rgb(172, 167, 167);
+    width: 75.5%;
+    height: 5%;
+    grid-gap: 15px;
+    padding: 3px;
+
+
+}
+
+.cadastrar_form {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: white;
+    background-color: #222;
+    justify-content: center;
+
+
+}
+
+.res_form {
+    display: flex;
+    background-color: beige;
+    width: 69.7%;
+    height: 20px;
+    align-self: center;
+    justify-content: center;
+    margin: 25px;
+    margin-left: 7.5%;
+    padding: 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    font-style: italic;
+    color: #fff;
+    animation: piscaForm 1.5s infinite;
+    font-size: small;
+}
+
+@keyframes piscaForm {
+    50% {
+        color: red;
+    }
+
+    0% {
+        color: red
+    }
+}
+
+
+table  {
+    width: 88.3%;
+    margin: 7%;
+    margin-top: 8px;
+    border-style: hidden;
+    
+    
+}
+table th {
+    color: #000;
+    font-weight: 400;
+    padding: 7px;
+    background-color: #74716f;
+}
+table td {
+    text-align: center; 
+    color: #000;
+}
+table > tr:nth-child(2n) {
+    background-color: #ccc;
+}
+table, th, td {
+    border: 2px solid  #ada9a9;
+    border-collapse: collapse;
+    
+}
+table > tr:hover {
+    background-color: #fd8206;
+}
+tr {
+    height: 30px;
+    
+  }
+  
+  
+.id_table {
+    width: 100px;
+}
+.agencia_table {
+    width: 150px;
+}
+.conta_table {
+    width: 150px;
+}
+.data_table {
+    width: 180px;
+}
+.descricao_table {
+    width: 487px;
+}
+.acao_table {
+    width: 150px;
+}
+.saldo_table {
+    width: 180px;
+}
+.footer_formulario {
+    display: flex;
+    background-color: #222;
+    height: 90px;
+    margin: 0;
+    grid-area: "footer";
+    grid-column: 1 / 4;
+    color: rgb(168, 168, 168);
+    justify-content: center;
+    align-items: center;
+    margin-top: -95px;
+}
+td {
+    opacity: 0.1;
 }

@@ -15,7 +15,7 @@ function Lancamento() {
 
   function Cadastrar(event) {
     var agencia = window.document.querySelector(".agencia");
-    var conta = document.querySelector(".conta");
+    var conta = document.querySelector(".conta"); 
     var data = window.document.querySelector(".data");
     var transacao = window.document.querySelector(".tansacao");
     var deposito = window.document.querySelector(".deposito");
@@ -25,12 +25,7 @@ function Lancamento() {
     
     var caracteres = /[a-z]/;
     
-    // "ABCDEFGHIJkLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú";
-
-  
-   
-      
-    
+    // "ABCDEFGHIJkLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú"; 
 
     if (agencia.value == '' ) {     
         resultado.innerHTML = "Preencher os campos vazios"    
