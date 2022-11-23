@@ -13,7 +13,9 @@ import Disponivel from '../src/Componentes/Disponivel/disponivel.jsx';
 import Lancamento from '../src/Componentes/Lancamento/lancamento.jsx';
 import Registrar from '../src/Componentes/Registrar/registrar.jsx';
 import Cadastrar from '../src/Componentes/Cadastrar/cadastrar.jsx';
-import Formulario from '../src/Componentes/Formulario/formulario.jsx'
+import Formulario from '../src/Componentes/Formulario/formulario.jsx';
+import Tabela from '../src/Componentes/Tabela/tabela.jsx';
+import Modal from '../src/Componentes/Modal/modal.jsx';
 
 
 
@@ -31,6 +33,8 @@ function App() {
         <Route path="/lancamento" element={ <Lancamento />} />     
         <Route path="/cadastrar" element={ <Cadastrar />} />
         <Route path="/formulario" element={ <Formulario />} />
+        <Route path="/tabela" element={ <Tabela />} />
+        <Route path="/modal" element={< Modal />} />
      </Routes>
      </Router>
 

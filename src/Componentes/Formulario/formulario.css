@@ -159,62 +159,77 @@
 }
 
 
-table  {
+table {
     width: 88.3%;
     margin: 7%;
     margin-top: 8px;
     border-style: hidden;
-    
-    
+
+
 }
+
 table th {
     color: #000;
     font-weight: 400;
     padding: 7px;
     background-color: #74716f;
 }
+
 table td {
-    text-align: center; 
+    text-align: center;
     color: #000;
 }
-table > tr:nth-child(2n) {
+
+table>tr:nth-child(2n) {
     background-color: #ccc;
 }
-table, th, td {
-    border: 2px solid  #ada9a9;
+
+table,
+th,
+td {
+    border: 2px solid #ada9a9;
     border-collapse: collapse;
-    
+
 }
-table > tr:hover {
+
+table>tr:hover {
     background-color: #fd8206;
 }
+
 tr {
     height: 30px;
-    
-  }
-  
-  
+
+}
+
+
 .id_table {
     width: 100px;
 }
+
 .agencia_table {
     width: 150px;
 }
+
 .conta_table {
     width: 150px;
 }
+
 .data_table {
     width: 180px;
 }
+
 .descricao_table {
     width: 487px;
 }
+
 .acao_table {
     width: 150px;
 }
+
 .saldo_table {
     width: 180px;
 }
+
 .footer_formulario {
     display: flex;
     background-color: #222;
@@ -227,6 +242,13 @@ tr {
     align-items: center;
     margin-top: -95px;
 }
+/* 
 td {
     opacity: 0.1;
+} */
+
+.icon_form {
+    width: 15px;
+    height: 15px;
+    background-color: #fd8206
 }

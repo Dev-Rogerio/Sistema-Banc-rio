@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+   
+}
+.form-modal {
+    display: flex;
+    width: 90%;
+    height: 110px;
+    margin-top: 15%;
+    background-color: #ccc;
+    grid-gap: 30px;
+    border: 1px solid #060606;
+    box-shadow: 3px 3px #575858;
+}
+.l-modal {
+    color: rgb(109, 108, 108);
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+.i-modal {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(172, 169, 169);
+    outline: 0;
+    background-color: #CCC; 
+    margin-top: 20PX; 
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+   
+}
+
+
+.id-modal {
+    width: 70px;
+    height: 20px;
+    color: red;
+}
+.agencia-modal {
+    width: 120px;
+    height: 20px;
+    color: blue;
+}
+.conta-modal {
+    width: 120px;
+    height: 20px;
+     color: blue;
+    
+}
+.data-modal {
+    width: 120px;
+    height: 20px;
+     color: blue;
+}
+.descricao-modal {
+    width: 150px;
+    height: 20px;
+     color: blue;
+}
+.saldo-modal {
+    width: 150px;
+    height: 20px;
+     color: blue;
+}
+.botao {
+    display: grid;
+    position: absolute;
+    margin-top: 85px;
+    background: rgba(174, 174, 173, 0.696);
+    width: 280px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    grid-gap: 15px;
+    align-items: center;
+    margin-left: 45%;
+    border-radius: 3px;
+}
+.salvar-modal {
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #454444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid#454444;
+}
+.limpar-modal {
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #454444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid#454444;
+}

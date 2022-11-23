@@ -18,13 +18,13 @@ function Formulario() {
     var res = document.querySelector(".res_form");
 
       
-      // 1º Deixar a tabela fixa na tela 
-      // 2º padronizar as linhas e bordas da tabela
-      // 3º Outra forma de inserir tabela no html para o  codigo não ficar tão grande.l
-      // 4º limpar 
-      // 5º deixar o codigo do id fixo no input Id      
-      // 6º quando digitar apagar mensagem deresposta
-      // 8° tira duvida array valores para que serve
+      // 1º Deixar a tabela fixa na tela ok
+      // 2º padronizar as linhas e bordas da tabela ok
+      // 3º Outra forma de inserir tabela no html para o  codigo não ficar tão grande.l ok
+      // 4º limpar ok
+      // 5º deixar o codigo do id fixo no input Id  ok    
+      // 6º quando digitar apagar mensagem deresposta 
+      // 8° tira duvida array valores para que serve ok
       // 7ª como funciona o onChange
       // operador Spread 
       // Barra de rolagem na tabela
@@ -34,7 +34,7 @@ function Formulario() {
       res.innerHTML = "Favor preencher todos os campos";
       document.querySelector(".agencia-form").focus();
     } else if(conta.value ==="" && conta.value.length <= 8){
-      res.innerHTML = "Digite a conta"
+      res.innerHTML = "A conta precisa ser maior ou igual a 4 digitos"
       document.querySelector(".conta-form").focus();
     } else if(date.value =="") {
       res.innerHTML = "Informe a data"
@@ -59,7 +59,7 @@ function Formulario() {
       })
     }
   }
-  // const [valores, setValores] = useState([]);
+  const [valores, setValores] = useState([]);
   const [valor, setValor] = useState({
     id: 0,
     agencia: "",
@@ -68,6 +68,9 @@ function Formulario() {
     descricao: "",
     saldo: "",
   });
+
+
+  
 
   return (
     <>
@@ -182,11 +185,12 @@ function Formulario() {
             </div>
           </div>
         </div>
+        
         <thead>
           <table>
             <tr>
               <th className="id_table" >Id</th>
-              <th className="agencia_table">Agncia</th>
+              <th className="agencia_table">Agência</th>
               <th className="conta_table" >Conta</th>
               <th className="data_table" >Data</th>
               <th className="descricao_table" >Descrição</th>
@@ -201,7 +205,10 @@ function Formulario() {
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
+              <td>
+                <img className="icon_form" src={Del} alt="" />{" "}
+                <img className="icon_form" src={Edite} alt="" />              
+              </td>
             </tr>
 
             ) )}          
