@@ -1,0 +1,79 @@
+{
+	"files": [
+		{
+			"path": "src/Componentes/Formulario/formulario.jsx",
+			"bookmarks": [
+				{
+					"line": 7,
+					"column": 0,
+					"label": "FUNCTION formulario"
+				},
+				{
+					"line": 22,
+					"column": 3,
+					"label": "VARIAVEIS"
+				},
+				{
+					"line": 71,
+					"column": 2,
+					"label": "USESTATE resultado"
+				},
+				{
+					"line": 109,
+					"column": 2,
+					"label": "RETURN"
+				},
+				{
+					"line": 132,
+					"column": 13,
+					"label": "INPUT agencia"
+				},
+				{
+					"line": 150,
+					"column": 13,
+					"label": "INPUT conta"
+				},
+				{
+					"line": 168,
+					"column": 13,
+					"label": "INPUT data"
+				},
+				{
+					"line": 186,
+					"column": 13,
+					"label": "INPUT descriçao"
+				},
+				{
+					"line": 203,
+					"column": 13,
+					"label": "INPUT valor"
+				},
+				{
+					"line": 218,
+					"column": 13,
+					"label": "BUTTON cadastrar"
+				},
+				{
+					"line": 226,
+					"column": 10,
+					"label": "TABELA"
+				},
+				{
+					"line": 274,
+					"column": 15,
+					"label": "IMG"
+				},
+				{
+					"line": 285,
+					"column": 7,
+					"label": "FOOTER"
+				},
+				{
+					"line": 292,
+					"column": 4,
+					"label": ""
+				}
+			]
+		}
+	]
+}

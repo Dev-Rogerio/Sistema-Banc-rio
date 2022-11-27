@@ -6,6 +6,9 @@ import Edite from "../Img/Edite.png";
 import "../Formulario/formulario.css";
 
 function Formulario() {
+  
+
+
   function buttonCadastrar(e) {
     e.preventDefault()
 
@@ -16,6 +19,8 @@ function Formulario() {
     var descricao = document.querySelector(".descricao-form");
     var valor = document.querySelector(".valor-form");
     var res = document.querySelector(".res_form");
+    // var delete = document.querySelector('.delete_form');
+    var edite = document.querySelector('.edite_form')
 
       
       // 1º Deixar a tabela fixa na tela ok
@@ -28,6 +33,9 @@ function Formulario() {
       // 7ª como funciona o onChange
       // operador Spread 
       // Barra de rolagem na tabela
+      // Editar
+      // Apagar
+      // Modal
       
 
     if (agencia.value === "") {
@@ -47,7 +55,8 @@ function Formulario() {
     document.querySelector(".valor-form").focus(); 
 
     } else {
-      setValor({
+      Limpar()
+      setResul({
         id: Number(id.value)+1,
         agencia: "",
         conta: "",
@@ -59,8 +68,12 @@ function Formulario() {
       })
     }
   }
-  const [valores, setValores] = useState([]);
-  const [valor, setValor] = useState({
+
+  
+
+
+  const [resultado, setResultado] = useState([]);
+  const [resul, setResul] = useState({
     id: 0,
     agencia: "",
     conta: "",
@@ -69,6 +82,29 @@ function Formulario() {
     saldo: "",
   });
 
+
+  const Limpar = () => {
+    console.log(resul)
+
+    setResultado([resul, ...resultado])
+    setResul({
+      id: "",
+      agencia: "",
+      conta: "",
+      descricao: "",
+      saldo: "",
+    })
+
+  }
+  const Delete = (id) => {
+    const resultadoFiltrado = resultado.filter((item) => item.id!=id)
+    setResultado(resultadoFiltrado)
+  }
+  const Editar = () =>{
+    
+    window.location.href = "http://localhost:3000/modal"
+  
+  }
 
   
 
@@ -86,7 +122,7 @@ function Formulario() {
               <label htmlFor="" className="l_id-form label_form">
                 Id
               </label>
-              <input value={valor.id} type="number" className="id_form input_form" />
+              <input value={resul.id} type="number" className="id_form input_form" />
             </div>
 
             <div className="inside">
@@ -97,11 +133,11 @@ function Formulario() {
                 type="number"
                 className="agencia-form input_form"
                 placeholder="Digite a agêndia"
-                value={valor.agencia}
+                value={resul.agencia}
                 onChange={(e) => {
-                  setValor({
-                    ...valor,
-                    agencia: e.target.value,
+                  setResul({
+                    ...resul,
+                    agencia: e.target.value
                   });
                 }}
               />
@@ -115,11 +151,11 @@ function Formulario() {
                 type="number"
                 className="conta-form input_form"
                 placeholder="Digite a conta"
-                value={valor.conta}
+                value={resul.conta}
                 onChange={(e) => {
-                  setValor({
-                    ...valor,
-                    conta: e.target.value,
+                  setResul({
+                    ...resul,
+                    conta: e.target.value
                   });
                 }}
               />
@@ -133,10 +169,10 @@ function Formulario() {
                 type="date"
                 className="date-form input_form"
                 placeholder="Informe a data"
-                value={valor.date}
+                value={resul.date}
                 onChange={(e) => {
-                  setValor({
-                    ...valor,
+                  setResul({
+                    ...resul,
                     date: e.target.value,
                   });
                 }}
@@ -151,10 +187,10 @@ function Formulario() {
                 type="text"
                 className="descricao-form input_form"
                 placeholder="descrição"
-                value={valor.descricao}
+                value={resul.descricao}
                 onChange={(e) => {
-                  setValor({
-                    ...valor,
+                  setResul({
+                    ...resul,
                     descricao: e.target.value,
                   });
                 }}
@@ -168,11 +204,11 @@ function Formulario() {
                 type="number"
                 className="valor-form input_form"
                 placeholder="Credito"
-                value={valor.valor}
+                value={resul.saldo}
                 onChange={(e) => {
-                  setValor({
-                    ...valor,
-                    valor: EventTarget.value,
+                  setResul({
+                    ...resul,
+                    saldo: e.target.value,
                   });
                 }}
               />
@@ -197,6 +233,35 @@ function Formulario() {
               <th className="saldo_table" >Saldo</th>
               <th className="acao_table" >Ações</th>
             </tr>
+            {resultado.map((item) => (
+              <tr key={item.id} >
+              <td>{item.id}</td>
+              <td>{item.agencia}</td>
+              <td>{item.conta}</td>
+              <td>{item.data}</td>
+              <td>{item.descricao}</td>
+              <td>{item.saldo}</td>
+              <td>
+                <img className=" delete_form" src={Del} onClick={() => Delete (item.id)} alt="" />{" "}
+                <img className="edite_form" src={Edite} onClick={Editar} alt="" />              
+              </td>
+            </tr>
+
+            ) )}          {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((item) => (
+              <tr key={item} >
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <img className=" delete_form" src={Del}  alt="" />{" "}
+                <img className="edite_form" src={Edite} onClick={Editar} alt="" />              
+              </td>
+            </tr>
+
+            ) )}          
             {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((item) => (
               <tr key={item} >
               <td></td>
@@ -206,8 +271,8 @@ function Formulario() {
               <td></td>
               <td></td>
               <td>
-                <img className="icon_form" src={Del} alt="" />{" "}
-                <img className="icon_form" src={Edite} alt="" />              
+                <img className=" delete_form" src={Del}  alt="" />{" "}
+                <img className="edite_form" src={Edite} onClick={Editar} alt="" />              
               </td>
             </tr>
 
@@ -221,6 +286,65 @@ function Formulario() {
           @VLZM todos os direitos reservados
         </footer>
       </container>
+
+
+
+       {/* MODAL */}
+
+       <div id="modal-promocao" className="modal-container">
+        <div className="modal">
+          <button className="fechar">X</button>
+          <div className="id-Mmodal">
+            <label htmlFor="l_id-modal " className="l-modal">
+              Id
+            </label>
+            <input className="id-modal i-modal" type="text" />
+          </div>
+
+          <div className="agencia-Modal">
+            <label htmlFor="l_agencia-modal" className="l-modal">
+              Agência
+            </label>
+            <input className="agencia-modal i-modal" type="text" />
+          </div>
+
+          <div className="conta-Modal">
+            <label htmlFor="l_conta-modal" className="l-modal">
+              Conta
+            </label>
+            <input className="conta-modal i-modal" type="text" />
+          </div>
+
+          <div className="data-Modal">
+            <label htmlFor="l_data-modal" className="l-modal">
+              Data
+            </label>
+            <input className="data-modal i-modal" type="text" />
+          </div>
+
+          <div className="descricao-Modal">
+            <label htmlFor="l_descricao-modal" className="l-modal">
+              Descrição
+            </label>
+            <input className="descricao-modal i-modal" type="text" />
+          </div>
+          <div className="saldo-Modal">
+            <label htmlFor="l_saldo-odal" className="l-modal">
+              Saldo
+            </label>
+            <input className="saldo-modal i-modal" type="text" />
+          </div>
+
+          <div className="botao">
+            <button id="clear" className="limpar-modal" onClick={''}>
+              Limpar
+            </button>
+            <button id="save" className="salvar-modal" onClick={''}>
+              Salvar
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
