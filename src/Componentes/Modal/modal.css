@@ -1,25 +1,377 @@
-/* *{
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+
+.input_form {
+    padding: 10px;
+    border-radius: 2px;
+    height: 10px;
+    display: flex;
+    outline: 0;
+    color: #000;
+    font-size: 15px;
+}
+
+.cadastrar_form {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: white;
+    background-color: #222;
+    justify-content: center;
+
+
+}
+
+.modal-container{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgb(0,0,0,0.5);
+    z-index: 2000;   
+   
+}
+
+.modal-container.mostrar {
+    display: flex;
+
+}
+
+.cli {
+    background-color: chocolate;
+    width: 150px;
+    height: 40px;
+}
+
+.modal {
+   background: white;
+    width: 70%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #988b70;
+    box-shadow: 0 0 0 10px white;  
+    position: relative;
+
+}
+.fechar {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: rgb(95, 92, 92);
+    color:white;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0 rgb(0,0,0, 1);
+    font-size: 1.2em;
+}
+
+@keyframes modal {
+
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
+
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+}
+.mostrar .modal {
+    animation: modal .5s;
+
+}
+.newsletter {
+    color: #000;
+    position: absolute;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.fundo_form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #222;
+    height: 150px;
+    justify-content: center;
+
+    background-color: #74716f;
+}
+
+.container_form {
+    display: flex;
+    width: 83%;
+    height: 70%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 10px;
+    background-color: #ccc;
+    padding: 15px;
+}
+
+.inside {
+    display: block;
+}
+
+.label_form {
+    display: flex;
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    margin: 3px;
+}
+
+
+.id_form {
+    display: flex;
+    background-color: #d3d3cd;
+    border: 1px solid #000;
+    width: 60px;
+}
+
+.agencia-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.conta-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.date-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.descricao-form {
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 350px;
+    cursor: pointer;
+}
+
+.valor-form {
+
+    display: flex;
+    background-color: beige;
+    border: 1px solid #000;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.cadastrar_form {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: white;
+    background-color: #222;
+    justify-content: center;
+
+
+}
+
+.res_form {
+    display: flex;
+    background-color: beige;
+    width: 69.7%;
+    height: 20px;
+    align-self: center;
+    justify-content: center;
+    margin: 25px;
+    margin-left: 7.5%;
+    padding: 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    font-style: italic;
+    color: #fff;
+    animation: piscaForm 1.5s infinite;
+    font-size: small;
+}
+
+@keyframes piscaForm {
+    50% {
+        color: red;
+    }
+
+    0% {
+        color: red
+    }
+}
+
+
+table {
+    width: 85.2%;
+    margin: 7%;
+    margin-top: 8px;
+    border-style: hidden;
+    margin-left: 115.5px;
+    
+
+}
+
+table th {
+    color: #000;
+    font-weight: 400;
+    padding: 7px;
+    background-color: #74716f;
+    border-radius: 3px;
+
+}
+
+table td {
+    text-align: center;
+    color: #000;
+}
+
+table>tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+table,
+th,
+td {
+    border: 2px solid #ada9a9;
+    border-collapse: collapse;
+
+}
+
+table>tr:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+tr {
+    height: 30px;
+
+}
+
+
+.id_table {
+    width: 100px;
+}
+
+.agencia_table {
+    width: 150px;
+}
+
+.conta_table {
+    width: 150px;
+}
+
+.data_table {
+    width: 180px;
+}
+
+.descricao_table {
+    width: 487px;
+}
+
+.acao_table {
+    width: 150px;
+}
+
+.saldo_table {
+    width: 180px;
+}
+
+.footer_formulario {
+    display: flex;
+    background-color: #222;
+    height: 90px;
+    margin: 0;
+    grid-area: "footer";
+    grid-column: 1 / 4;
+    color: rgb(168, 168, 168);
+    justify-content: center;
+    align-items: center;
+    margin-top: -95px;
+}
+ 
+td {
+    opacity: 0.1;
+} 
+
+.delete_form {
+    width: 15px;
+    height: 15px;
+  
+}
+.edite_form {
+    width: 15px;
+    height: 15px;
+  
+}
+
+
+ https://www.youtube.com/watch?v=fu-enUG2VEE 
+ Modal {
+
     margin: 0;
     padding: 0;
 }
 
-.container{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-   
-}
-.form-modal {
-    display: flex;
-    width: 90%;
-    height: 110px;
-    margin-top: 15%;
-    background-color: #ccc;
-    grid-gap: 30px;
-    border: 1px solid #060606;
-    box-shadow: 3px 3px #575858;
-}
+
+
 .l-modal {
     color: rgb(109, 108, 108);
     font-weight: 400;
@@ -104,4 +456,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid#454444;
-} */
+}
+
+ */ */

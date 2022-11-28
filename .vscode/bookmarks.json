@@ -4,73 +4,118 @@
 			"path": "src/Componentes/Formulario/formulario.jsx",
 			"bookmarks": [
 				{
-					"line": 7,
-					"column": 0,
-					"label": "FUNCTION formulario"
-				},
-				{
-					"line": 22,
-					"column": 3,
+					"line": 12,
+					"column": 4,
 					"label": "VARIAVEIS"
 				},
 				{
-					"line": 71,
-					"column": 2,
-					"label": "USESTATE resultado"
+					"line": 24,
+					"column": 3,
+					"label": "IF"
 				},
 				{
-					"line": 109,
+					"line": 63,
+					"column": 2,
+					"label": "USESTATE"
+				},
+				{
+					"line": 73,
+					"column": 1,
+					"label": "CONST limpar"
+				},
+				{
+					"line": 86,
+					"column": 2,
+					"label": "CONST save"
+				},
+				{
+					"line": 128,
+					"column": 1,
+					"label": "CONST fechar"
+				},
+				{
+					"line": 136,
+					"column": 2,
+					"label": "CONST deletar"
+				},
+				{
+					"line": 140,
 					"column": 2,
 					"label": "RETURN"
 				},
 				{
-					"line": 132,
+					"line": 167,
 					"column": 13,
 					"label": "INPUT agencia"
 				},
 				{
-					"line": 150,
+					"line": 185,
 					"column": 13,
 					"label": "INPUT conta"
 				},
 				{
-					"line": 168,
+					"line": 203,
 					"column": 13,
 					"label": "INPUT data"
 				},
 				{
-					"line": 186,
+					"line": 221,
 					"column": 13,
 					"label": "INPUT descriçao"
 				},
 				{
-					"line": 203,
+					"line": 238,
 					"column": 13,
 					"label": "INPUT valor"
 				},
 				{
-					"line": 218,
+					"line": 253,
 					"column": 13,
 					"label": "BUTTON cadastrar"
 				},
 				{
-					"line": 226,
+					"line": 261,
 					"column": 10,
 					"label": "TABELA"
 				},
 				{
-					"line": 274,
+					"line": 298,
 					"column": 15,
-					"label": "IMG"
+					"label": "IMG del"
 				},
 				{
-					"line": 285,
+					"line": 321,
 					"column": 7,
 					"label": "FOOTER"
 				},
 				{
-					"line": 292,
+					"line": 326,
 					"column": 4,
+					"label": "MODAL"
+				},
+				{
+					"line": 329,
+					"column": 10,
+					"label": "BUTTON fechar modal"
+				},
+				{
+					"line": 371,
+					"column": 12,
+					"label": "BUTTON clear modal"
+				},
+				{
+					"line": 374,
+					"column": 12,
+					"label": "BUTTON save modal"
+				}
+			]
+		},
+		{
+			"path": "src/Componentes/Modal/modal.jsx",
+			"bookmarks": [
+				{
+					"line": 10,
+					"column": 2,
 					"label": ""
 				}
 			]
